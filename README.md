@@ -25,8 +25,13 @@ mvn clean install
 ##### Using Maven
 
 ````sh
-mvn clean package spring-boot:run
+mvn spring-boot:run
 `````
+
+To enable ssl use -Drun.profiles=https.
+````sh
+mvn spring-boot:run -Drun.profiles=https
+````
 
 ### Usage
 
