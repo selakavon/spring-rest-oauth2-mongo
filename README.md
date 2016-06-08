@@ -20,17 +20,38 @@ This is a sample of a Hypermedia-Driven RESTful Web Service service based on Spr
 mvn clean install
 ````
 
+### Dev enviroment configuraiton
+
+##### Mongo
+
+##### Admin user init script
+
+````javascript
+db.user.insert(
+	{ "fullName": "Administrator",
+	  "userName": "admin",
+	  "password": "admin",
+	  "roles": ["ADMIN","USER"]
+	}
+);
+````
+
 ### Running 
 
 ##### Using Maven
 
 ````sh
-mvn spring-boot:run
+mvn spring-boot:run -Drun.profiles=localmongo
 `````
 
 To enable ssl use -Drun.profiles=https.
 ````sh
-mvn spring-boot:run -Drun.profiles=https
+mvn spring-boot:run -Drun.profiles=https,localmongo
+````
+
+To define custom mongo DB URI use spring.data.mongodb.uri argument.
+````sh
+java -jar target/jogging-1.0-SNAPSHOT.war --spring.data.mongodb.uri=
 ````
 
 ### Usage
