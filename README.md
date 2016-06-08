@@ -2,6 +2,8 @@
 
 [![Build Status](https://api.travis-ci.org/selakavon/spring-rest-oauth2-mongo.svg)](https://travis-ci.org/selakavon/spring-rest-oauth2-mongo)
 
+Try it on Heroku: https://joggingtracker.herokuapp.com/api
+
 This is a sample of a Hypermedia-Driven RESTful Web Service service based on Spring Boot platform using OAuth2 for protecting the endpoint and Mongo DB as a NoSQL storage.
 
 ### Technology stack POC based on Spring Boot
