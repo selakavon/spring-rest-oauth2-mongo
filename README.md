@@ -58,7 +58,7 @@ java -jar target/jogging-1.0-SNAPSHOT.war --spring.data.mongodb.uri=
 
 ### Usage
 
-:information_source: You can see the whole workflow at commented test methods userFLowTest() and adminFlowTest in
+:information_source: You can see the whole workflow at commented test methods userFLowTest() and adminFlowTest() in
 [sixkiller.sample.restapi.controller.E2EControllersTest](https://github.com/selakavon/spring-rest-oauth2-mongo/blob/master/src/test/java/sixkiller/sample/restapi/controller/E2EControllersTest.java)
 
 :information_source: For testing purposes curl is used in insecure way regarding site's certificate.
@@ -150,7 +150,7 @@ You will received basic user info and hypermedia links pointing to user related 
 }
 ````
 
-##### For the rest of the workflow please take a look at commented test methods userFLowTest() and adminFlowTest in
+##### For the rest of the workflow please take a look at commented test methods userFLowTest() and adminFlowTest() in
 [sixkiller.sample.restapi.controller.E2EControllersTest](https://github.com/selakavon/spring-rest-oauth2-mongo/blob/master/src/test/java/sixkiller/sample/restapi/controller/E2EControllersTest.java)
 
 
