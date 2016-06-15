@@ -27,12 +27,12 @@ mvn clean install
 ##### Mongo
 
 ##### Admin user init script
-
+Initialize admin user (regular users can be registered through UI) with admin password.
 ````javascript
 db.user.insert(
 	{ "fullName": "Administrator",
 	  "userName": "admin",
-	  "password": "admin",
+	  "password": "$2a$10$XirirFXO3oFfrPEqOfmzMu7gBAWLapnCtgRHK.QHcrqZVJ1j//Ykq",
 	  "roles": ["ADMIN","USER"]
 	}
 );
